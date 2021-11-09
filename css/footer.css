@@ -1,0 +1,6 @@
+.main {
+    background: rgb(187, 187, 187);
+    background: linear-gradient(113deg, rgba(187, 187, 187, 1) 62%, rgba(148, 148, 148, 1) 79%);
+    column-count: 2;
+    display: flex;
+}
