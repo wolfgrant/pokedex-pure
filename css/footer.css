@@ -1,6 +1,72 @@
-.main {
-    background: rgb(187, 187, 187);
-    background: linear-gradient(113deg, rgba(187, 187, 187, 1) 62%, rgba(148, 148, 148, 1) 79%);
+@font-face {
+    font-family: "Pokemon GB";
+    src: url("../fonts/Pokemon_GB.eot") format("eot"), url("../fonts/Pokemon_GB.woff") format("woff"),
+        url("../fonts/Pokemon_GB.ttf") format("truetype"), url("../fonts/Pokemon_GB.svg#PokemonGB") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+    background-color: #f6f6f6;
     column-count: 2;
     display: flex;
+    width: 100%;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+}
+
+.footer .text-1{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 32vw;
+
+}
+
+.footer .text-1 h3{
+    
+    color: #C7C7C7;
+    text-transform: uppercase;
+    font-family: "Pokemon GB";
+
+}
+
+.footer .cards {
+    
+    padding: 1vw;
+    border-radius: 1vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.footer .cards .card {
+    
+    background-color: #BBBBBB;
+    padding: 1vw;
+    border-radius: 1vw;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer .cards .card:hover {
+    
+    background-color: #777777;
+
+}
+
+.footer .cards .card:hover img {
+    
+    filter: grayscale(0%);
+
+}
+
+.footer .cards .card img {
+    width: 6vw;
+    filter: grayscale(100%);
 }

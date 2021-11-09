@@ -22,6 +22,7 @@
 }
 
 .header .title h2{
+   color:  white;
     text-transform: uppercase;
 }
 
@@ -39,7 +40,7 @@
     width: 75px;
     height: 75px;
     background: #fff;
-    border: 10px solid #777777;
+    border: 10px solid #141414;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 1vw;

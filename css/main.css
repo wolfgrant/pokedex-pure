@@ -36,13 +36,14 @@
 }
 
 .main .body-1 .name .flame{
-    width: 35px;
+    width: 2.5vw;
     margin-right: 12px;
     margin-top: -8px;
 }
 
 .main .body-1 .name h3{
     padding-top: 2px;
+    font-size: 1vw;
     padding-bottom: 2px;
     text-transform: uppercase;
 }
@@ -75,9 +76,15 @@
 }
 
 .main .body-2 .status h5{
-    
+
+    font-size: 0.7vw;
     color: #C7C7C7;
     text-transform: uppercase;
+
+}
+.main .body-2 .status h3{
+    
+    font-size: 1vw;
 
 }
 .main .body-2 .status .status-1 div, .main .body-2 .status .status-2 div{
@@ -87,6 +94,11 @@
 
 }
 
+@media (min-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+  }
 
 
 
