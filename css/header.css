@@ -36,7 +36,8 @@
     box-sizing: border-box;
   }
   body {
-    background: #ecf0f1;
+    background: #C8BFE7;
+    height: 100%
   }
   /* Poké Styles */
   .pokeball {
