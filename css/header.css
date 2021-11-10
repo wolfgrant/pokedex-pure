@@ -8,11 +8,15 @@
 }
 
 .header{
-    background-color: #777777;
+    background-color: black;
     border-top-left-radius: 3vw;
     border-top-right-radius: 3vw;
     padding: 0.5vw;
     display: flex;    
+}
+
+.header_mobile{
+  display: none;
 }
 
 .header .title{
@@ -40,7 +44,7 @@
     width: 75px;
     height: 75px;
     background: #fff;
-    border: 10px solid #141414;
+    border: 10px solid black;
     border-radius: 50%;
     overflow: hidden;
     margin-left: 1vw;
@@ -72,4 +76,81 @@
     border-radius: 50%;
     z-index: 10;
     box-shadow: 0 0 0 5px #777777;
+  }
+
+  @media (max-width: 600px) {
+    .header {
+      display: none;
+    }
+    .header_mobile{
+      background-color: black;
+      border-top-left-radius: 3vw;
+      border-top-right-radius: 3vw;
+      padding: 0.5vw;
+      display: flex;    
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .header_mobile .title{
+      height: 100%;
+      margin-top: 0.4vw;
+      font-size: 2vw;
+      font-family: 'Pokemon GB';
+  }
+  
+  .header_mobile .title h2{
+     color:  white;
+      text-transform: uppercase;
+  }
+  
+  *, *:before, *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      background: #ecf0f1;
+    }
+    /* Poké Styles */
+    .pokeball {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      border: 10px solid black;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-left: 1vw;
+    }
+    .pokeball::before,
+    .pokeball::after {
+      content:"";
+      position: absolute;
+    }
+    .pokeball::before {
+      background: white;
+      width: 65%;
+      height: 50%;
+    }
+    .pokeball::after {
+      top: calc(77% - 10px);
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #777777;
+    }
+    .pokeball__button {
+      position: absolute;
+      top: calc(134% - 30px);
+      left: calc(134% - 30px);
+      width: 8px;
+      height: 8px;
+      background: #7f8c8d;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      z-index: 10;
+      box-shadow: 0 0 0 3px #777777;
+    }
   }

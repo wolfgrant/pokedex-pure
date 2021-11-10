@@ -17,18 +17,10 @@ body {
     padding: 10px;
 }
 
-
-.main {
-    background: rgb(187, 187, 187);
-    background: linear-gradient(113deg, rgba(187, 187, 187, 1) 62%, rgba(148, 148, 148, 1) 79%);
-    column-count: 2;
+@media (max-width: 600px) {
+    .container {
+        background-color: #C8BFE7;
+        padding: 10px;
+    }
 }
 
-.main .body-1{
-}
-
-.main .body-1 .name{
-    display: flex;
-    background-color: #F6F6F6;
-    border-radius: 2vw;
-}
